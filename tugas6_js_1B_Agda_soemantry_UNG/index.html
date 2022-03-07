@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor="#badadd">
+    <form id="formulir">
+        <table width="20%" align="center"  cellpadding="5" cellspacing="0" >
+            <thead>
+                <th colspan="3" bgcolor="#435560"><h1>Kalkulator</h1></th>
+            </thead>
+        <tbody>
+        <tr><td colspan="2" ><label for="fnmbr">Angka 1: </label><td></tr>
+        <tr><td colspan="2"><input type="text" name="a1" onfocus="kosong1()" value="angka 1" /></td></tr>
+        <tr><td colspan="2"><label for="lnmbr">Angka 2: </label><br></td></tr>
+        <tr><td colspan="2"><input type="text" name="a2" onfocus="kosong2()" value="angka 2" /></td></tr>
+
+        <tr><td colspan="2"><label for="Hsl"> Hasil: </label></td></tr>
+        <tr><td colspan="2"><input type="text" name="hasil" value="0" disabled /></td></tr>
+        <tr>
+            <td colspan="2">
+            <input type="button" onclick="dijumlah()" name="jumlah" value="+" />&nbsp;
+            <input type="button" onclick="dikurang()" name="kurang" value="-" />&nbsp;
+            <input type="button" onclick="dikali()" name="kali" value="*" />&nbsp;
+            <input type="button" onclick="dibagi()" name="bagi" value="/" />&nbsp;
+            <input type="button" onclick="dipangkat()" name="pangkat" value="^" />&nbsp; &nbsp;
+            <input type="button" onclick="kosongAll()" name="batal" value="batal" />&nbsp;
+            
+            </td></tr>
+        </tbody>
+    </form>
+</body>
+<script language="javascript" src="plus/kurs.js">Harga </script>
+</html>

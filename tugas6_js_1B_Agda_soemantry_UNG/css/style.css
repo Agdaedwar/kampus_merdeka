@@ -1,0 +1,25 @@
+table {
+    background-color: #79A4AA;
+
+}
+h1{
+    color: antiquewhite;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=button]{
+    border: 1px solid rgb(140, 166, 214);
+    
+}
+
+input[type=button]:hover {
+    background-color: #19ff94;
+}
