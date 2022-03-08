@@ -1,0 +1,55 @@
+<script>
+    class gempa{
+        
+        constructor (lokasi, skala){
+            this.tempat = lokasi;
+            this.skala = skala;
+            
+        }
+
+        
+
+        dampak(){
+
+            let akibat;
+            if (this.skala <=2) akibat = "Dampaknya tidak terasa"; 
+            else if (this.skala <4 && this.skala >2) akibat = "Dampaknya bangunan retak-retak"; 
+            else if (this.skala <6 && this.skala >4) akibat = "Dampaknya bangunan roboh"; 
+            else akibat = "Dampaknya bangunan roboh dan tsunami"; 
+
+            document.write(`Asal Gempa : ${this.tempat}
+            <br/> Skala : ${this.skala} SR
+            <br/> Dampak : ${akibat}
+            <hr/>`)
+
+        }
+
+    
+    }
+
+    let jerman = new gempa("Munich", 4)
+    let francis = new gempa("Paris", 6)
+    let inggris = new gempa("London", 8)
+    let portugal = new gempa("Lisbon", 1)
+    let belanda = new gempa("Amsterdam", 2)
+    let amerika = new gempa("New York", 5)
+    let argentina = new gempa("Buenos Aires", 3)
+    let brasil = new gempa("Brasilia", 1)
+    let belgia = new gempa("Brussel", 6)
+    let rusia = new gempa("Moskow", 2)
+
+    document.write("DAFTAR GEMPA <br><hr>")
+
+    jerman.dampak();
+    francis.dampak();
+    inggris.dampak();
+    portugal.dampak();
+    belanda.dampak();
+    amerika.dampak();
+    argentina.dampak();
+    brasil.dampak();
+    belgia.dampak();
+    rusia.dampak();
+
+    
+</script>
