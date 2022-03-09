@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas Jquery Suara Hewan</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("div.kuda").mouseover(function () {
+                $(this).css({
+                    background: "url('image/kuda.jpg')"
+                });
+                $("div.kuda").click(function () {
+                    $("<audio></audio>").attr({
+                        'src': 'audio/horseneigh.mp3',
+                        'volume': 5,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+
+            });
+            $("div.monyet").mouseover(function () {
+                $(this).css({
+                    background: "url('image/monyet.jpg')"
+                });
+                $("div.monyet").click(function () {
+                    $("<audio></audio>").attr({
+                        'src': 'audio/monyet.mp3',
+                        'volume': 5,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+            $("div.anjing").mouseover(function () {
+                $(this).css({
+                    background: "url('image/anjing.jpg')"
+                });
+                $("div.anjing").click(function () {
+                    $("<audio></audio>").attr({
+                        'src': 'audio/anjing.mp3',
+                        'volume': 5,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+            $("div.gajah").mouseover(function () {
+                $(this).css({
+                    background: "url('image/gajah.jpg')"
+                });
+                $("div.gajah").click(function () {
+                    $("<audio></audio>").attr({
+                        'src': 'audio/elephant.mp3',
+                        'volume': 5,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+            $("div.singa").mouseover(function () {
+                $(this).css({
+                    background: "url('image/singa.jpg')"
+                });
+                $("div.singa").click(function () {
+                    $("<audio></audio>").attr({
+                        'src': 'audio/lion.mp3',
+                        'volume': 5,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+        div {
+            background: blueviolet;
+            width: 221px;
+            height: 175px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#badadd">
+    <p>SUARA HEWAN</p>
+    <div>
+        <div class="kuda"></div>
+        <p>Kuda</p>
+    </div>
+    <div>
+        <div class="monyet"></div>
+        <p>Monyet</p>
+    </div>
+    <div>
+        <div class="anjing"></div>
+        <p>Anjing</p>
+    </div>
+    <div>
+        <div class="gajah"></div>
+        <p>Gajah</p>
+    </div>
+    <div>
+        <div class="singa"></div>
+        <p>Singa</p>
+    </div>
+
+</body>
+
+</html>
